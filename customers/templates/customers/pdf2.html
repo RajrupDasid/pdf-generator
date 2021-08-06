@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF document </title>
+    <style>
+        .back{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
     {{customer}}
@@ -17,7 +22,9 @@
     <br>
     {{customer.logo.path}}
     <br>
-    <img src="{{customer.logo.path}}" height='200px'>
+    <div class="back">
+        <img src="{{customer.logo.path}}" height='200px'>
+    </div>
     <!--Incase image did not displayed-->
     <!--<img src="media/{{customer.logo}}" height='200px'>-->
 </body>
